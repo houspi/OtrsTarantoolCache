@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<otrs_package version="1.0">
+    <Name>OtrsTarantoolCache</Name>
+    <Version>6.0.0</Version>
+    <Vendor>houspi</Vendor>
+    <Framework>6.x.x</Framework>
+    <URL>https://github.com/houspi</URL>
+    <License>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</License>
+    <Description Lang="en">OTRS Tarantool Cache</Description>
+    <ModuleRequired>Coro</ModuleRequired>
+    <Filelist>
+        <File Permission="660" Location="Kernel/Config/Files/XML/CacheTarantool.xml" />
+        <File Permission="660" Location="Kernel/System/Cache/Tarantool.pm" />
+        <File Permission="660" Location="scripts/tarantool/env.tarantool" />
+        <File Permission="660" Location="scripts/tarantool/init.lua" />
+        <File Permission="660" Location="scripts/tarantool/stat.lua" />
+        <File Permission="660" Location="scripts/tarantool/init.sh" />
+        <File Permission="660" Location="scripts/tarantool/crontask.txt" />
+        <File Permission="660" Location=".config/tarantool/tarantool" />
+    </Filelist>
+</otrs_package>

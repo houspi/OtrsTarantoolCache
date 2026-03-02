@@ -1,0 +1,1 @@
+0 */3 * * * /usr/bin/find /opt/otrs/var/tarantool/otrs_cache/wal -type f -name '*.xlog' -mmin +180 -delete 2&>1

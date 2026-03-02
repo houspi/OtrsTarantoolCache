@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<otrs_config version="2.0" init="Config">
+    <Setting Name="Cache::Tarantool::MasterHost" Required="0" Valid="1">
+        <Description Translatable="1">Tarantool master host config.</Description>
+        <Navigation>Core::Cache::Tarantool</Navigation>
+        <Value>
+            <Hash>
+                <Item Key="Hosts">
+                    <Array>
+                        <Item>127.0.0.1</Item>
+                    </Array>
+                </Item>
+                <Item Key="Port">3301</Item>
+                <Item Key="User">otrs</Item>
+                <Item Key="Password">secret</Item>
+            </Hash>
+        </Value>
+    </Setting>
+    <Setting Name="Cache::Tarantool::SlaveHost" Required="0" Valid="1">
+        <Description Translatable="1">Tarantool master host config.</Description>
+        <Navigation>Core::Cache::Tarantool</Navigation>
+        <Value>
+            <Hash>
+                <Item Key="Hosts">
+                    <Array>
+                        <Item>127.0.0.1</Item>
+                    </Array>
+                </Item>
+                <Item Key="Port">3301</Item>
+                <Item Key="User">otrs</Item>
+                <Item Key="Password">secret</Item>
+            </Hash>
+        </Value>
+    </Setting>
+    <Setting Name="Cache::Tarantool::SpaceName" Required="0" Valid="1">
+        <Description Translatable="1">Tarantool space name.</Description>
+        <Navigation>Core::Cache::Tarantool</Navigation>
+        <Value>
+            <Item ValueType="String">otrs_cache</Item>
+        </Value>
+    </Setting>
+    <Setting Name="Cache::Tarantool::ZipLargeObject" Required="0" Valid="1">
+        <Description Translatable="1">Compress large objects.</Description>
+        <Navigation>Core::Cache::Tarantool</Navigation>
+        <Value>
+            <Item ValueType="Checkbox">1</Item>
+        </Value>
+    </Setting>
+    <Setting Name="Cache::Tarantool::SizeToCompress" Required="0" Valid="1">
+        <Description Translatable="1">Compress objects with size greater than.</Description>
+        <Navigation>Core::Cache::Tarantool</Navigation>
+        <Value>
+            <Item ValueType="String" ValueRegex="^\d+$">1048576</Item>
+        </Value>
+    </Setting>
+</otrs_config>
